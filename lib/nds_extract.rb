@@ -21,6 +21,7 @@ def directors_totals(nds)
   nil
   directors_totals = Hash.new 
   row_index = 0 
-  
+  while row_index <directors_database.length do
+    c
   
 end
