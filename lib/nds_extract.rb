@@ -27,3 +27,13 @@ def directors_totals(nds)
    gross_sales = 0 
    while movies < nds[row_index][:movies].count do
      gross_sales += nds[row_index][:movies][movies][:worldwide_gross]
+     movies += 1 
+   end
+   results[nds][row_index][:name]] = gross_sales
+   row_index += 1 
+ end
+ results
+     
+     
+     
+     
