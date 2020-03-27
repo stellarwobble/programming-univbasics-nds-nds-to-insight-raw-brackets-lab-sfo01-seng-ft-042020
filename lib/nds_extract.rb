@@ -27,7 +27,7 @@ def directors_totals(nds)
     puts name
     total = 0 
     inner_row = 0 
-    while inner_row < directors_database[row][:movie].length do   
+    while inner_row < directors_database[row_index][:movie].length do   
       total += 1 
     end
     results[name] = total 
