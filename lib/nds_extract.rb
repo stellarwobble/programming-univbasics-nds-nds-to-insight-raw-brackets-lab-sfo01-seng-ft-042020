@@ -29,7 +29,7 @@ def directors_totals(nds)
      gross_sales += nds[row_index][:movies][movies][:worldwide_gross]
      movies += 1 
    end
-   results[nds][row_index][:name]] = gross_sales
+   results[nds[row_index][:name]] = gross_sales
    row_index += 1 
  end
  results
