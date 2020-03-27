@@ -22,16 +22,8 @@ def directors_totals(nds)
   
   results = Hash.new 
   row_index= 0 
-  while row_index < directors_database.length do
-    name = directors_database[row_index][:name]
-    puts name
-    total = 0 
-    inner_row = 0 
-    while inner_row < directors_database[row_index][:movie].length do   
-      total += 1 
-    end
-    results[name] = total 
-    row_index += 1 
-  end
-  
-end
+  while row_index < nds.count do
+   movies = 0 
+   gross_sales = 0 
+   while movies < nds[row_index][:movies].count do
+     gross_sales += nds[row_index][:movies][movies][:worldwide_gross]
