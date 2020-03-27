@@ -21,4 +21,5 @@ def directors_totals(nds)
   nil
   directors_totals = Hash.new 
   
+  
 end
