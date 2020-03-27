@@ -19,15 +19,19 @@ def directors_totals(nds)
   #
   # Be sure to return the result at the end!
   nil
-  directors_totals = Hash.new 
-  row_index = 0 
-  while row_index < nds.length do
-    column_index = 0
-    while column_index < nds[row_index].length do
-      inner_len = nds[row_index][column_index].length
-      inner_index = 0 
-      while inner_index < inner_len do
-        
-      w
+  
+  results = Hash.new 
+  row_index= 0 
+  while row_index < directors_database.length do
+    name = directors_database[row_index][:name]
+    puts name
+    total = 0 
+    inner_row = 0 
+    while inner_row < directors_database[row][:movie].length do   
+      total += 1 
+    end
+    results[name] = total 
+    row_index += 1 
+  end
   
 end
